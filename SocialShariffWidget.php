@@ -36,6 +36,11 @@ class SocialShariffWidget extends CWidget {
      * @var string orientation of buttons
      */
     public $orientation = 'vertical';
+
+    /**
+     * @var bool if info button shall be shown
+     */
+    public $showInfo = true;
     
     /**
      * @var bool fontawesome allready loaded
@@ -60,6 +65,9 @@ class SocialShariffWidget extends CWidget {
         }
         Yii::app()->clientScript->registerScriptFile($this->_assets . '/' . $this->getScriptName(), CClientScript::POS_END);
         Yii::app()->clientScript->registerCssFile($this->_assets . '/' .  $this->getStylesheetName());
+        if (!$this->showInfo) {
+	    Yii::app()->clientScript->registerCss('hide-shariff-info', '.shariff ul li.shariff-button.info {display: none;}');
+	}
     }
 
     public function run() {
