@@ -8,7 +8,7 @@ Installation
 
 Basic usage
 -----------
-     $this->widget('ext.socialShariff.CoinSliderWidget', array(
+     $this->widget('ext.socialShariff.SocialShariff', array(
 		'theme' 		=> 'white',
 		'orientation' 	=> 'vertical'
 	));
