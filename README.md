@@ -8,7 +8,7 @@ Installation
 
 Basic usage
 -----------
-     $this->widget('ext.socialShariff.SocialShariff', array(
+     $this->widget('ext.socialShariff.SocialShariffWidget', array(
 		'theme' 		=> 'white',
 		'orientation' 	=> 'vertical'
 	));
